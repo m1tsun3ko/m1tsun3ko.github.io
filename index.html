@@ -167,9 +167,16 @@ transform: translateY(120px);
     For the website to work, you need JavaScript.
   </noscript>
 
-  <video class="bg-video" autoplay muted loop playsinline draggable="false">
-    <source src="/addictions/vid/background.MP4" type="video/mp4">
-  </video>
+
+<img id="bg-video" alt="photo">
+
+<script>
+const count = 13;
+const random = Math.floor(Math.random() * count) + 1;
+
+document.getElementById("bg-video").src = `addict/photos/${random}.jpg`;
+</script>
+  
 
   <main id="main-content">
     <img
