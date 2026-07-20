@@ -120,7 +120,30 @@ transform: translateY(120px);
   user-select: none;
 }
 
+.links {
+  position: absolute;
+  top: 60%; /* выше © all rights reserved */
+  left: 50%;
+  transform: translate(-50%, calc(-50% + 200px));
 
+  display: flex;
+  gap: 20px;
+
+  font-family: 'SpecialElite', sans-serif;
+  font-size: 12px;
+
+  z-index: 4;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+  
 </style>
   
   <meta charset="utf-8">
@@ -186,8 +209,16 @@ document.getElementById("bg-video").src = `addict/photos/${random}.jpg`;
       draggable="false"
     >
 
-    <div class="ct-text">© all rights reserved
+    <div class="links">
+  <a href="/projects">projects</a>
+  <a href="/about-us">about</a>
+  <a href="mailto:mflks@protonmail.com">email us</a>
 </div>
+
+<div class="ct-text">
+  © all rights reserved
+</div>
+    
   </main>
 
   <script>
